@@ -42,15 +42,15 @@ A Next.js starter template with NextAuth.js preconfigured — plug in your front
 3. Copy the example environment file:
 
     ```bash
-    cp .env.example .env
+    cp .env.example .env.local
     ```
 
-4. Update your `.env` file with your Google and GitHub client IDs and secrets.
+4. Update your `.env.local` file with your Google and GitHub client IDs and secrets.
 
 5. Run the development server:
 
     ```bash
-    npm dev
+    npm run dev
     ```
 
 Boom. You’re live.
