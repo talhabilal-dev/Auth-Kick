@@ -1,67 +1,80 @@
-# Auth Kick - Next.js Template with NextAuth
+# ⚡ Auth-Kick
 
-Auth Kick is an open-source Next.js template designed to save developers time by providing a pre-configured authentication setup using [NextAuth.js](https://next-auth.js.org/). It includes authentication with Google and GitHub out of the box, making it easy to get started with secure and scalable user authentication.
+A Next.js starter template with NextAuth.js preconfigured — plug in your frontend, and you’re ready to roll with [Google](https://developers.google.com/identity) and [GitHub OAuth](https://docs.github.com/en/developers/apps/building-oauth-apps).
 
-## Getting Started
+---
 
-First, clone the repository and install the dependencies:
+## 🚀 Features
 
-```bash
-git clone https://github.com/your-repo/auth-kick.git
-cd auth-kick
-npm install
-```
+- ✅ Preconfigured NextAuth.js with Google + GitHub OAuth
+- ⚡ Built on Next.js App Router
+- 🎨 Tailwind CSS + shadcn/ui for beautiful UI components
+- 🔐 Auth session management ready (client + server)
+- 🧠 Typed with TypeScript for peace of mind
+- 🧱 Ready for integration with any DB (Prisma support coming soon)
 
-Then, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework**: Next.js (App Router)
+- **Auth**: NextAuth.js
+- **Styling**: Tailwind CSS, shadcn/ui
+- **Language**: TypeScript
 
-## Features
+---
 
-- **Next.js**: A powerful React framework for building modern web applications.
-- **NextAuth.js**: Pre-configured authentication with Google and GitHub providers.
-- **TypeScript**: Fully typed for better developer experience.
-- **Scalable**: Easily extendable to add more providers or custom authentication logic.
+## 📦 Getting Started
 
-## Configuration
+1. Clone the repository:
 
-To configure the authentication providers, create a `.env.local` file in the root of your project and add the following environment variables:
+    ```bash
+    git clone https://github.com/your-username/auth-kick.git
+    cd auth-kick
+    ```
 
-```env
-NEXTAUTH_URL=http://localhost:3000
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-GITHUB_CLIENT_ID=your-github-client-id
-GITHUB_CLIENT_SECRET=your-github-client-secret
-```
+2. Install dependencies:
 
-Replace `your-google-client-id`, `your-google-client-secret`, `your-github-client-id`, and `your-github-client-secret` with your actual credentials from Google and GitHub.
+    ```bash
+    npm install # or pnpm / yarn
+    ```
 
-## Learn More
+3. Copy the example environment file:
 
-To learn more about the technologies used in this template, check out the following resources:
+    ```bash
+    cp .env.example .env
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
-- [NextAuth.js Documentation](https://next-auth.js.org/getting-started/introduction) - Learn how to configure and extend NextAuth.js.
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/) - Learn about TypeScript and its features.
+4. Update your `.env` file with your Google and GitHub client IDs and secrets.
 
-## Contributing
+5. Run the development server:
 
-Contributions are welcome! If you have ideas, suggestions, or bug reports, feel free to open an issue or submit a pull request on [GitHub](https://github.com/your-repo/auth-kick).
+    ```bash
+    npm dev
+    ```
 
-## Deploy on Vercel
+Boom. You’re live.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Status
 
+- ✅ **Day 1 Complete**:
+  - Repo Setup
+  - Google + GitHub OAuth
+  - Basic Auth Flow Configured
+  - UI baseline with shadcn
+
+Next up: DB adapter, magic link, RBAC, custom providers, and more.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. Drop an issue or idea — this is open source, baby.
+
+---
+
+## 📄 License
+
+MIT — use it, fork it, ship it.
